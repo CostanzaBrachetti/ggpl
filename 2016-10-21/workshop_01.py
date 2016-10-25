@@ -18,7 +18,7 @@ def fun(xPil,yPil,xBeam,zBeam,ldy,lhz):
 		
 
 	beamx=QUOTE([xBeam,0])
-	beamz=QUOTE([zBeam,0])
+	beamz=QUOTE([-0.05,zBeam,-0.05])
 	beamS=STRUCT([QUOTE([0])])
 	height=0
 	a=0
