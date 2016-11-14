@@ -1,0 +1,8 @@
+NB. Avevo consegnato il primo workshop_04 venerdì 11 (ho tardato la consegna per una serie di impegni personali) ma ho deciso di perfezionarlo quindi le consegno oggi quello pefezionato. 
+
+Ho testato il mio programma con due forme differenti di tetti, rispettivamente passati alla funzione principale da creaForma() e creaForma1().
+Nella funzione principale estaraggo la lista dei vertici e la lista delle celle dalla forma tramite la funzione UKPOL.
+Successivamente creo lo scheletro e faccio l'OFFSET per dargli la giusta dimensione. 
+Nel doppio ciclo for scorro la lista delle celle, data una cella vado a prendere i valori all'interno di quella e tramite questi i vertici associati a tali valori, una volta che ho i vertici corrispondenti alla cella posso costruirmi la facciata. La funzione lunghezzaFacciata prende la lista dei vertici, li conta e mi restituisce la lista di lunghezza corretta; ad esempio se la lista passata a lunghezzaFacciata contiene 3 vertici, [[0.3,5,10],[0.4,0,3],[9,6,1]], lunghezzaFacciata restituisce [1,2,3]. Faccio MKPOL della lista di vertici e della lista passata dalla funzione e ottengo una facciata, faccio l'OFFSET per dargli la giusta dimensione e la inserisco nella struttura. 
+Una volta ottenute tutte le facciate all'interno della struttura aggiungo anche lo scheletro (che rappresenta le travi del mio tetto).
+Non ho fatto riferimento a immagini trovate sul web ma ho inventato (cercando di non complicarmi troppo la vita) quindi purtroppo non ho immagini da allegare. 
